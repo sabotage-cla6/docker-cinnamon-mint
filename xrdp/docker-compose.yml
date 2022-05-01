@@ -1,0 +1,18 @@
+version: "3.7"
+
+networks:
+  rdp-network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.1.0/24
+
+services:
+  cinnamon-mint:
+    image: sabotagecla6/mint20.3-xrdp:latest
+    ports:
+        - "10001:3389"
+    shm_size: '4G'
+    networks:
+      rdp-network:
+        ipv4_address: 10.10.1.51
