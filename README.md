@@ -11,13 +11,14 @@ docker-cinnamon-mint は、コンテナ上でLinux Mintを立ち上げ、
 
 下記コマンドを実行します。
 
-■コンテナの立ち上げ方
+■ コンテナの立ち上げ方
+
 ```
 cd ./xrdp
 sudo docker-compose up
 ```
 
-■コンテナへの接続
+■ コンテナへの接続
 
 10.10.1.51:10001へのRDP接続
 
